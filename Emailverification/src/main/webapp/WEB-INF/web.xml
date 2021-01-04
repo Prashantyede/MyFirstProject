@@ -1,0 +1,27 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>UserVerify</servlet-name>
+  	<display-name>UserVerify</display-name>
+  	<description></description>
+  	<servlet-class>newpackage.UserVerify</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>VerifyCode</servlet-name>
+  	<display-name>VerifyCode</display-name>
+  	<description></description>
+  	<servlet-class>newpackage.VerifyCode</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UserVerify</servlet-name>
+  	<url-pattern>/UserVerify</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>VerifyCode</servlet-name>
+  	<url-pattern>/VerifyCode</url-pattern>
+  </servlet-mapping>
+</web-app>
