@@ -35,7 +35,7 @@ public class UserVerify extends HttpServlet {
 		
 	        response.setContentType("text/html;charset=UTF-8");
 	        try (PrintWriter out = response.getWriter()) {
-	            //feth form value
+	            //fecth form value
 	           String name = request.getParameter("username");
 	           String email = request.getParameter("useremail");
 	           
@@ -44,7 +44,7 @@ public class UserVerify extends HttpServlet {
 	      		//get the 6-digit code
 	           String code = sm.getRandom();
 	           
-	      		//craete new user using all information
+	      		//create new user using all information
 	           User user = new User(name,email,code);
 	           
 	           //call the send email method
